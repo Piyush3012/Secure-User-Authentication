@@ -54,6 +54,7 @@ mern-auth-app/
 git clone https://github.com/your-username/mern-auth-app.git
 cd mern-auth-app
 
+exit
 
 ### 🟦 Step 2: Backend Setup
 
@@ -68,12 +69,17 @@ JWT_SECRET=your_jwt_secret_key
 
 npm start
 
+exit
+
 ## 🟦 Step 3: Frontend Setup
+
+```bash 
 
 cd ../client
 npm install
 npm start
-
+ 
+exit 
 
 🔐 Security Best Practices:
 
