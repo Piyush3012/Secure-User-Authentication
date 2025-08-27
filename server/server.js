@@ -10,14 +10,14 @@ import userRouter from './routes/userRoutes.js';
 const app=express();
 const port=process.env.PORT || 3000
 
-const allowedOrigin=['http://localhost:5173']
+const allowedOrigin=['https://secure-user-authentication-1x1i.onrender.com']
 
 connectDB()
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
-app.use(cors({credentials:true,origin:allowedOrigin}));
+app.use(cors({credentials:true,origin:"allowedOrigin"}));
 
 //api endpoints 
 app.get('/',(req,res)=>{
